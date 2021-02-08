@@ -25,3 +25,13 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
+/*
+
+DB : u8939991_piblajar
+u : u8939991_piblajar
+p : mhkvA5C@oeB}
+
+
+
+*/

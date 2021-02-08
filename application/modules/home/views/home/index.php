@@ -11,8 +11,7 @@
     <center>
       <h2 class="mb-5"><strong>LAYANAN</strong></h2>
     </center>
-    <div class="row ">
-
+    <!-- <div class="row ">
       <?php foreach ($layanan as $row) { ?>
         <div class="col-lg-4">
           <img src="<?= base_url($row->icon); ?>" class="rounded-circle" width="30%" alt="">
@@ -21,12 +20,20 @@
           <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
         </div>
       <?php } ?>
+    </div> -->
 
-
-    </div><!-- /.row -->
+    <div class="list-group">
+      <?php foreach ($layanan as $row) { ?>
+        <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1"><?= $row->nama_layanan; ?></h5>
+          </div>
+          <p class="mb-1"><?= $row->deskripsi; ?></p>
+        </div>
+      <?php } ?>
+    </div>
   </div>
 </div>
-
 
 <hr class="featurette-divider">
 
@@ -62,6 +69,10 @@
       <center>
         <h2 class="mb-5"><strong>HUBUNGI KAMI</strong></h2>
       </center>
+
+      <div class="text-center">
+        <a href="https://api.whatsapp.com/send?phone=682349970673" class="btn btn-success" target="blank "><i class="fa fa-whatsapp"></i> Hubungi kami di WhatsApp</a>
+      </div>
     </div>
   </div>
 </div>
